@@ -1,7 +1,3 @@
-Here’s a README-ready Markdown version of the combined report you can drop straight into your repo:
-
----
-
 # Final Report
 
 **Author:** Abba Otieno Ndomo
