@@ -2,7 +2,7 @@ Here’s a README-ready Markdown version of the combined report you can drop str
 
 ---
 
-# ISYE 3232 Final Report
+# Final Report
 
 **Author:** Abba Otieno Ndomo
 
