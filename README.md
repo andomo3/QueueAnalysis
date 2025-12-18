@@ -56,13 +56,15 @@ We analysed vehicle data from a signalised intersection with three approach stre
 
 ### Data Cleaning and Empirical Distributions
 
-![Snapshot of helper methods for cleaning the dataset](cleaning.png)
+<img width="1332" height="874" alt="image" src="https://github.com/user-attachments/assets/ea497e60-cdbc-49cf-9c87-a9d13c7cf372" />
+
 
 We cleaned the data by replacing any non-positive inter-arrival, entry, service, or waiting times with the minimum positive value observed in that series and removing missing values. We then formed empirical PMFs by binning times into **5-second intervals**, capping support at **30 bins (0–150s)** to keep the QPLEX state space tractable.
 
 These PMFs were supplied to the `StandardMultiserver` model in QPLEX with `number_of_servers = 1`. After a 200-step burn-in, we sampled over 400 steps, truncating the state space at 400 states.
 
-![Snapshot of the cleaned dataset](image.png)
+<img width="1179" height="297" alt="image" src="https://github.com/user-attachments/assets/b80983f9-a484-4a57-9537-4e44f81ed4ce" />
+
 
 ### Results and Interpretation
 
